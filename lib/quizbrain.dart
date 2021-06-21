@@ -32,21 +32,29 @@ class QuizBrain {
   ];
 
   void nextQuestion() {
-    if (_questionNumber < _questionBank.length-1) {
+    if (_questionNumber < _questionBank.length - 1) {
       _questionNumber++;
     }
-    else {
-      
-    }
-    print(_questionNumber);
-    print(_questionBank.length);
   }
 
   String getQuestionText() {
     return _questionBank[_questionNumber].questionText;
   }
 
-  bool getAnswerText() {
+  bool getCorrectAnswer() {
     return _questionBank[_questionNumber].questionAnswer;
+  }
+
+  bool isFinished() {
+    if (_questionNumber >= _questionBank.length - 1) {
+      print('now returning true');
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  void reset() {
+    _questionNumber = 0;
   }
 }
