@@ -7,9 +7,9 @@ void main() {
   runApp(Quizzler());
 }
 
-QuizBrain quizBrain = QuizBrain();
 
 class Quizzler extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,6 +32,8 @@ class QuizPage extends StatefulWidget {
 }
 
 class _QuizPageState extends State<QuizPage> {
+
+  QuizBrain quizBrain = QuizBrain();
   List<Icon> scoreKeeper = [];
 
   void checkAnswer(bool userPickedAnswer) {
