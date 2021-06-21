@@ -1,6 +1,6 @@
 ## Screenshots
 <p align="center">
-<img src="screenshots/srec.gif" width="40%" >
+<img src="screenshots/screenrec.gif" width="40%" >
 <img src="screenshots/ss5.jpg" width="40%" >
 <img src="screenshots/ss1.jpg" width="40%">
 <img src="screenshots/ss2.jpg" width="40%" >
